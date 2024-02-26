@@ -1,0 +1,423 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0C052A;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(179, 179, 111, 0.637);
+}
+
+.img-inicio{
+    width: 60px;
+}
+
+.li-nav{
+    list-style: none;
+    margin: 10px;
+}
+
+.a-nav{
+    color: white;
+    text-decoration: none;
+}
+
+.h1-header{
+    color: white;
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    padding-bottom: 10px;
+}
+
+#destaques-scroller::-webkit-scrollbar{
+    
+    height: 7px;
+}
+#destaques-scroller::-webkit-scrollbar-track{
+    background-color: gray;
+    border-radius:10px
+}
+
+#destaques-scroller::-webkit-scrollbar-thumb{
+    background-color: rgba(179, 179, 111, 0.637);;
+    border-radius:10px
+}
+
+#destaques-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+
+    width: 60%;
+    margin: auto;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    border-radius:10px
+}
+
+div.mangas-destaques{
+    margin: 10px;
+}
+
+img.img-destaques{
+    width: 100%;
+    height: 270px;
+}
+
+.nomes-destaques{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+img.img-mashle{
+    width: 90%;
+    height: 800px;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #0C052A;
+    margin-bottom: 10%;
+}
+
+
+.lista-de-mangas-recomendados{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7px;
+}
+
+.h2-main-lista{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 10px 10px 10px;
+}
+
+.container-listas{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3px;
+    margin-left: 2%;
+    margin-bottom:1px;
+    border: 1px solid white;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+img.img-lista-recomendados{
+    width: 15%;
+}
+
+.texto-resumo{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    color: white;
+    font-size: .7em;
+    padding-left: 2%;
+}
+
+h3{
+    margin: 0px 10px 10px 10px;
+}
+
+p{
+    margin: 0px 10px 0px 0px;
+    font-size: 1.2em;
+}
+
+#container-em-alta{
+    background-color: black;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-left: .8%;
+    display: block;
+}
+
+.div-em-alta{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    border: 1px solid white;
+}
+
+.p-em-alta{
+    color: white;
+    margin: 10px;
+}
+
+.titulo-main{
+    margin-top: 5%;
+    color: White;
+    text-align: center;
+    
+}
+
+footer{
+    clear: both;
+    background-color: rgba(179, 179, 111, 0.637);
+    width: 100%;
+    height: 20px;
+    margin-top: 6%
+}
+
+#main-resumo-mangas{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+
+.resumo-mangas{
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 15%;
+    height: 90%;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 1px solid white;
+    background-color: white;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.img-resumo-mangas{
+    width: 100%;
+    height: 70%;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 200px 0px;
+}
+
+.img-ajustada{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+.div-img-mashle{
+    width: 70%;
+    margin-top: .5%;
+    margin-left: 13.4%;
+}
+
+img.img-mashle{
+    width: 100%;
+    height: 600px;
+}
+.p-resumos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight:bold ;
+}
+
+.like-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 16%;
+  }
+  
+  .like-button {
+    background-color: transparent;
+    color: #555;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .like-button.active {
+    color: #e74c3c; /* Altere a cor quando o botão estiver ativo (curtido) */
+  }
+
+  .like-container-index{
+    width: 100%;
+    height: 7vh;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+  }
+
+  #btn-index{
+    margin-left: 2%;
+  }
+
+#onepiece{
+   margin-top: 20%; 
+}
+
+#img-shingeki-resumo{
+ width: 100%;
+ height: 70%;
+}
+
+.container-img-resumo{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+margin: 5px;
+}
+
+.img-resumo{
+    width: 70%;
+    height: 80%;
+}
+
+
+
+
+/* AQUI COMEÇA A RESPONSIVIDADE */
+
+
+@media screen and (max-width:1762px){
+    h3{
+        font-size: 1.1em;
+    }
+
+    p{
+       font-size: 1em;  
+    }
+}
+
+@media screen and (max-width: 1472px) {
+    .like-container{
+        margin-top: 19%;
+    }
+    
+}
+
+@media screen and (max-width: 1364px){
+    p{
+        font-size: .9em;
+    }
+    .like-container{
+        margin-top: 21%;
+    }
+
+}
+
+@media screen and (max-width: 1210px){
+img.img-destaques{
+    height: 222px;
+}
+}
+
+
+@media screen and (max-width: 1168px){
+    #container-em-alta{
+        display: none;
+    }
+
+    .lista-de-mangas-recomendados{
+        width: 100%;
+    }
+
+    .container-listas{
+        width: 99%;
+        height: 100vh;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    h3{
+        font-size:10px;
+    }
+
+    p{
+        font-size: 8px;
+    }
+
+    .lista-de-mangas-recomendados{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .container-listas{
+        width: 99%;
+        height: 100vh;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .like-container{
+        margin-top: 18%;
+    }
+}
+
+@media screen and (max-width: 950px){
+img.img-destaques{
+    height: 180px;
+}
+}
+
+@media screen and (max-width: 770px){
+img.img-destaques{
+    height: 150px;
+}
+}
+
+@media screen and (max-width: 700px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista-de-mangas-recomendados{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .container-listas{
+        width: 98%;
+        height: 100vh;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .like-container{
+        margin-top: 11%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    img.img-destaques{
+        height: 100px;
+    }
+    }

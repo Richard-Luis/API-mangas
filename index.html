@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de Mangás</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header id="Header-index">
+
+        <nav class="nav-links">
+
+            <div class="img-link-inicio"><a href="index.html"><img class="img-inicio" src="mangas-shonen/img-inicio.jpeg" alt=""></a></div>
+
+        <li class="li-nav">
+            <a class="a-nav" href="#">Mais Lidos</a>
+        </li>
+        <li class="li-nav">
+            <a class="a-nav" href="#">Atualizados</a>
+        </li>
+        <li class="li-nav">
+            <a class="a-nav" href="#">Recém adicionados</a>
+        </li>
+        <li class="li-nav">
+            <a class="a-nav" href="#">Categorias</a>
+        </li>
+        </nav>
+
+        <h1 class="h1-header">Leitura de Mangás</h1>
+    </Header>
+
+    
+
+    <div id="destaques-scroller">
+        <div class="mangas-destaques"><a class="links-scrollers" href="onepiece.html"><img class="img-destaques" src="mangas-shonen/onepiece.jpg" alt=""></a>
+        <p class="nomes-destaques">One Piece</p></div>
+
+        <div class="mangas-destaques"><a class="links-scrollers" href="shingeki.html"><img class="img-destaques" src="mangas-shonen/shingeki.jpg" alt=""></a>
+        <p class="nomes-destaques">Shingeki no Kyojin</p></div>
+
+        <div class="mangas-destaques"><a class="links-scrollers" href="mashle.html"><img class="img-destaques" src="mangas-shonen/mashle.jpg" alt=""></a>
+        <p class="nomes-destaques">Mashle</p></div>
+
+        <div class="mangas-destaques"><a class="links-scrollers" href="myheroacademy.html"><img class="img-destaques" src="mangas-shonen/myheroacedmy.jpg" alt=""></a>
+        <p class="nomes-destaques">My Hero Academy</p></div>
+
+        <div class="mangas-destaques"><a class="links-scrollers" href="tokyorevengers.html"><img class="img-destaques" src="mangas-shonen/tokyorevengers.jpg" alt=""></a>
+        <p class="nomes-destaques">Tokyo Revengers</p></div>
+    </div>
+
+    <div class="h2-main-lista">Lista de Mangás</div>
+
+    <main id="main">
+
+        <div class="lista-de-mangas-recomendados">
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/death-note.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Death Note</h3>
+                    <p>A história centra-se em Light Yagami, um estudante do ensino médio que descobre um caderno sobrenatural chamado Death Note, no qual pode matar pessoas se os nomes forem escritos nele enquanto o portador visualizar mentalmente o rosto de alguém que quer assassinar.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados"src="mangas-shonen/one-punch.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>One Punch Man</h3>
+                    <p>One Punch-Man conta a história de Saitama, um super-herói extremamente poderoso, que se entediou com a ausência dos desafios nas suas lutas contra o mal e procura encontrar um oponente digno.</p>
+                </div>
+                <div class="like-container">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/naruto.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Naruto</h3>
+                    <p>A série gira em torno das aventuras vividas por Naruto Uzumaki, um jovem órfão habitante da Aldeia da Folha que sonha em se tornar o quinto Hokage, o maior guerreiro e governante da vila. Ao se graduar como ninja, Naruto descobre que tem um demônio raposa selado dentro de si.</p>
+                </div>
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/jujutsu.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Jujutsu Kaisen</h3>
+                    <p>No conceituado anime, o adolescente Yuuji Itadori participa de um clube de ocultismo e acaba se envolvendo com um item perigoso, um dedo amaldiçoado. Para proteger seus colegas de um ataque das Maldições, ele engole o dedo e se torna anfitirão da Maldição.</p>
+                </div>
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/dbz.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Dragon Ball</h3>
+                    <p>Dragon Ball conta a história de Son Goku, uma criança que aparentemente veio do espaço e é encontrada por um senhor de idade, Son Gohan, que o adota e o cria como neto. Com o tempo, o jovem cresce e se torna um exímio lutador de artes marciais, com força e habilidades sobre-humanas.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/risou-resumo.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Risou no Musume nara Sekai Saikyou demo Kawaigatte Kuremasu ka?</h3>
+                    <p> O pai incomparável e a filha mais forte. Os poderes do pai que estão ocultos sob o disfarce de um D-Rank médio são...? A história de seus laços e a tempestade que os espera, começa!</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lista-de-mangas-recomendados">
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/kimetsu-resumo.png" alt="">
+                 <div class="texto-resumo">
+                    <h3>Kimetsu No Yaiba (Demons Slayer)</h3>
+                    <p>A história conta sobre um jovem que ganha a vida vendendo carvão até descobrir que sua família foi massacrada por um demônio, restando apenas sua irmã, Nezuko, que foi infectada e está se tornando um monstro. O protagonista, então, decide virar um caçador de demônios e buscar vingança.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/Berserk-resumo.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Berserk</h3>
+                    <p>O mangá de Miura é inspirado na Europa medieval e é ambientado em um mundo de fantasia chamado Midland, em que criaturas como demônios e fadas são reais. Guts vê sua vida mudar por completo quando ele conhece o Bando do Falcão, liderado pelo angelical guerreiro Griffith.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/regime-img.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Saikyou Onna Shishоu-Tachi Ga Ikusei Houshin wo Megutte Shuraba</h3>
+                    <p>Haviam 3 mestras, consideradas as mais poderosas do mundo. Só que, havia algo que elas não conseguiam obter, que era, um homem adequado! Mas, em meio a árdua busca delas por um parceiro, um ligeiro pensamento veio em suas mentes, quase como um oráculo divino! “Se não existe um homem adequado para mim, só me resta cria-lo!”.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/Ryuusa.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Ryuusa no Ori: Kokoro no Naka no “Kokoro”</h3>
+                    <p>Nossa história envolve um jovem chamado Nozomu Bountis que entrou nessa escola pelo sonho de sua amada. Com o passar do tempo, seus poderes ficaram paralisados ​​e ele já não conseguia ficar mais forte e também suas notas caíram. Acabou que sua amada foi roubado pelo seu melhor amigo na época.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/Isekaigaeri-resumo.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Isekai Kaeri no Daikenja-sama wa Sore Demo Kossori Kurashite Iru Tsumori desu</h3>
+                    <p class="isekai-kaeri">Saito foi reencarnado para o outro mundo aos 15 anos de idade, tornou-se o Grande Sábio e derrotou o Lorde Demônio. Pouco depois disso, a porta que conecta o outro mundo e o mundo real se abre, e Saitou retorna ao Japão com o poder do Grande Sábio. No entanto, 19 anos se passaram no mundo real. Saito, que se afastou por tanto tempo, conheceu sua amiga de infância Kanako, que agora é mãe solteira. Mas parece que há alguém que está mirando na vida de Kanako… Uma história de um aspirante a Grande Sábio que voltou de outro mundo começa!</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-listas">
+                <img class="img-lista-recomendados" src="mangas-shonen/chainsaw-img.jpg" alt="">
+                <div class="texto-resumo">
+                    <h3>Chainsaw Man</h3>
+                    <p>Em uma realidade onde demônios podem fazer contratos com humanos, concedendo poderes a eles após um pacto, a trama da animação japonesa acompanha o jovem Denji, um adolescente que enfrenta complicações financeiras por conta de dívidas deixadas por seu pai em relação à organização criminosa Yakuza.</p>
+                </div>
+
+                <div class="like-container" id="btn-ajustes">
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-heart fa-2xl"></i>
+                    </button>
+                    <button class="like-button" onclick="toggleLike(this)">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+            </div>    
+        </div>
+
+        <div id="container-em-alta">
+            <h3 class="titulo-main">Em Alta</h3>
+
+            <div class="div-em-alta">
+                <img class="img-lista-recomendados" src="mangas-shonen/jujutsu.jpg" alt="">
+                <p class="p-em-alta"> Jujutsu Kaisen</p>
+            </div>
+            <div class="div-em-alta">
+                <img class="img-lista-recomendados" src="mangas-shonen/Berserk-resumo.jpg" alt="">
+                <p class="p-em-alta">Berserk</p>
+            </div>
+            <div class="div-em-alta">
+                <img class="img-lista-recomendados" src="mangas-shonen/chainsaw-img.jpg" alt="">
+                <p class="p-em-alta">Chainsaw man</p>
+            </div>
+            <div class="div-em-alta">
+                <img class="img-lista-recomendados" src="mangas-shonen/dandadan.jpg" alt="">
+                <p class="p-em-alta">Dandadan</p>
+            </div>
+            <div class="div-em-alta">
+                <img class="img-lista-recomendados" src="mangas-shonen/kimetsu.jpg" alt="">
+                <p class="p-em-alta">Kimetsu no Yaiba (Demon Slayer)</p>
+            </div>
+            <div class="div-em-alta">
+                <img class="img-lista-recomendados" src="mangas-shonen/onepiece.jpg" alt="">
+                <p class="p-em-alta">One Piece</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
