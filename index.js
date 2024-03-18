@@ -19,3 +19,24 @@ function toggleLike(button) {
       }
   });
 }
+
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  var loginBtn = document.getElementById("login-btn");
+  var hamburger = document.getElementById("hamburger");
+  var close = document.getElementById("close");
+
+  if (menu.className === "menu") {
+      menu.className += " showing";
+      hamburger.classList.remove("show");
+      hamburger.classList.add("hide");
+      close.classList.remove("hide");
+      close.classList.add("show");
+  } else {
+      menu.className = "menu";
+      hamburger.classList.remove("hide");
+      hamburger.classList.add("show");
+      close.classList.remove("show");
+      close.classList.add("hide");
+  }
+}
