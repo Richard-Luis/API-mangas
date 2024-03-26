@@ -12,29 +12,25 @@
 <body>
 
     <Header id="Header-index">
-
-        <nav class="nav-links">
-
-            <a href="index.html"><img class="img-inicio" src="mangas-shonen/img-inicio.jpeg" alt=""></a>
-
-        <li class="li-nav">
-            <a class="a-nav" href="#">Mais Lidos</a>
-        </li>
-        <li class="li-nav">
-            <a class="a-nav" href="#">Atualizados</a>
-        </li>
-        <li class="li-nav">
-            <a class="a-nav" href="#">Recém adicionados</a>
-        </li>
-        <li class="li-nav">
-            <a class="a-nav" href="#">Categorias</a>
-        </li>
+        <nav>
+            <a class="link-img-inicio" href=""><img src="mangas-shonen/Lei (1).png" alt=""></a>
+            <ul class="menu" id="menu">
+                <li><a href="#">Mais Lidos</a></li>
+                <li><a href="#">Atualizados</a></li>
+                <li><a href="#">Categorias</a></li>
+            </ul>
+            <i class="fas fa-bars show" id="hamburger" onclick="toggleMenu()"></i>
+            <i class="fas fa-times" id="close" onclick="toggleMenu()"></i>
         </nav>
+        <div class="login-btn" id="login-btn">
+            <button><a class="a-login" href="#">Login</a></button>
 
+            <button><a class="a-cadastro" href="#">Cadastro</a></button>
+        </div>
     </Header>
 
 
-        <main id="main-resumo-mangas">
+        <main id="main-resumo-mangas" class="fundo-myhero">
 
             <div class="resumo-mangas">
                   <div class="img-resumo-mangas"><img class="img-ajustada" src="mangas-shonen/myheroacedmy-resumo.jpg" alt="">
@@ -58,6 +54,20 @@
                 
             </div>
         </main>
+
+        <footer id="footer-destaques">
+            <div class="links-footer">
+                <a class="a-footer" href="">Recomende um Mangá</a>
+                <a class="a-footer" href="">Suporte</a>
+                <a class="a-footer" href="">sugestões</a>
+            </div>
+    
+            <div class="img-link-footer">
+                <img class="img-footer primeira" src="mangas-shonen/icons8-instagram-36.png" alt="">
+    
+                <img class="img-footer" src="mangas-shonen/logo-discord.png" alt="">
+            </div>
+        </footer>
 </body>
 <script src="index.js"></script>
 </html>
