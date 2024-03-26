@@ -560,7 +560,8 @@ img.img-destaques{
 
 @media screen and (max-width: 472px){
     img.img-destaques{
-        height: 70px;
+        width: 63px;
+        height: 100px;
     }
     }
 @media screen and (max-width: 422px){
