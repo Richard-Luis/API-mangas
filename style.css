@@ -45,6 +45,9 @@ nav ul li a {
     padding: 14px 20px;
     text-decoration: none;
 }
+.li-inicio{
+    display: none;
+}
 
 .fa-bars,
 .fa-times {
@@ -108,6 +111,9 @@ nav ul li a {
     nav ul li {
         float: none;
         width: 100%;
+    }
+    .li-inicio{
+        display: block;
     }
 
     .fa-bars.show,
@@ -462,7 +468,7 @@ img.img-destaques{
 
     .lista-de-mangas-recomendados{
         width: 100%;
-        height: 80vh;
+        height: 100vh;
     }
 
     .container-listas{
@@ -542,9 +548,14 @@ img.img-destaques{
 
 @media screen and (max-width: 650px){
     img.img-destaques{
+        width: 65px;
         height: 100px;
     }
+
+    p.nomes-destaques{
+        text-align: center;
     }
+}
 
 @media screen and (max-width: 662px){
    .nomes-destaques{
@@ -559,17 +570,25 @@ img.img-destaques{
     }
 
 @media screen and (max-width: 472px){
+    #destaques-scroller{
+        width: 90%;
+    }
+
     img.img-destaques{
-        width: 63px;
-        height: 100px;
+        width: 80px;
+        height: 120px;
     }
+}
+@media screen and (max-width: 425px){
+    .lista-de-mangas-recomendados{
+        height: 100vh;
     }
-@media screen and (max-width: 422px){
+
     img.img-destaques{
-        height: 90px;
-        width: 55px;
+        height: 120px;
+        width: 75px;
     }
-    }
+}
 
 
 
@@ -628,6 +647,12 @@ footer{
     }
 }
 
+@media screen and (max-width: 1150px){
+    p.nomes-destaques{
+        font-size: .8em;
+    }
+}
+
 @media screen and (max-width: 1000px){
     .resumo-mangas{
         width: 27%;
@@ -636,8 +661,14 @@ footer{
         width: 80%;
         height: 40%;
     }
-    
 }
+
+@media screen and (max-width: 1150px){
+    p.nomes-destaques{
+        font-size: .7em;
+    }
+}
+
 @media screen and (max-width: 768px){
     .fundo-onepiece{
             background-image: url('mangas-shonen/onepiece-wallpaper.png');
@@ -715,6 +746,10 @@ footer{
     .img-resumo{
         width: 80%;
         height: 40%;
+    }
+
+    p.nomes-destaques{
+        font-size: .5em;
     }
 }
 
